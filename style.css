@@ -1,0 +1,89 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+
+.card-container{
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.card-container h2{
+    font-size: 30px;
+    color: blue;
+}
+
+h2:hover{
+    color:rgb(12, 145, 100);
+    transform: scale(1.5);
+}
+
+.deck{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    width: 250px;
+    height: 300px;
+    transform: translateX(-50%);
+    border: none;
+
+}
+
+.card{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: inherit;
+    height: inherit;
+
+    transform-origin: left bottom;
+    border: none;
+    outline: none;
+
+}
+
+.card img {
+	width:inherit;
+	height:inherit;
+	border: none;
+	
+}
+
+.card:hover {
+	outline: 1px solid blue;
+	
+}
+
+.deck:hover .card:nth-child(1) {
+	transform:rotate(-40deg);
+
+}
+
+.deck:hover .card:nth-child(1):hover {
+	transform:scale(1.2,1.2) rotate(-20deg);
+}
+
+.deck:hover .card:nth-child(2) {
+	transform:rotate(-10deg);
+}
+
+.deck:hover .card:nth-child(2):hover {
+	transform:scale(1.2,1.2) rotate(-10deg);
+}
+
+.deck:hover .card:nth-child(3){
+    transform:rotate(-0deg);
+}
+
+.deck:hover .card:nth-child(3){
+    transform: scale(1.2,1.2) rotate(-10deg);
+}
